@@ -54,22 +54,22 @@ export default class {
      * @param {string} level 
      */
     sendLogToRemote(message, level) {
-        let data = {
-            message: message,
-            level: level,
-            session: this.FOSConfig.session.session,
-            system: this.system,
-            source: this.FOSConfig.session.source,
-            type: "Financial_Operating_System"
-        };
+        // let data = {
+        //     message: message,
+        //     level: level,
+        //     session: this.FOSConfig.session.session,
+        //     system: this.system,
+        //     source: this.FOSConfig.session.source,
+        //     type: "Financial_Operating_System"
+        // };
 
-        let options = {
-            'method' : 'post',
-            'contentType': 'application/json',
-            'payload' : JSON.stringify(data)
-        };
+        // let options = {
+        //     'method' : 'post',
+        //     'contentType': 'application/json',
+        //     'payload' : JSON.stringify(data)
+        // };
 
         //@ts-ignore
-        UrlFetchApp.fetch('https://listener.logz.io:8071/?token=' + this.FOSConfig.config.get("logzio.token"), options);
+        // UrlFetchApp.fetch('https://listener.logz.io:8071/?token=' + this.FOSConfig.config.get("logzio.token"), options);
     }
 }

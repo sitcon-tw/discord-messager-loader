@@ -1,6 +1,5 @@
 //@ts-check
 import AbstractService from './AbstractService';
-import { TestScript } from '../script/TestScript';
 import ControllerExecutor from './controller/ControllerExecutor';
 
 export default class extends AbstractService{
@@ -12,11 +11,10 @@ export default class extends AbstractService{
     constructor() {
         super();
         this.controllers = new Map();
-        this.addScript(TestScript.getName(), TestScript);
     }
 
-    addScript(id, object) {
-        this.controllers.set(id, object);
+    addScript(id, aClass) {
+        this.controllers.set(id, aClass);
     }
 
     hasScript(id) {
