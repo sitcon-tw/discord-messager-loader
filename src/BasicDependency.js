@@ -1,5 +1,4 @@
 import RequireService from './service/RequireService';
-import ControllerService from './service/ControllerService';
 import DependencyService from './service/DependencyService';
 import LoggerService from './service/LoggerService';
 
@@ -23,7 +22,3 @@ requireService.addComponent("LoggerService", loggerService);
 
 let dependenceService = new DependencyService();
 requireService.addComponent("DependencyService", dependenceService);
-
-let controllerService = new ControllerService();
-global.FOSValues.controllerService = controllerService;
-requireService.addComponent("ControllerService", controllerService);

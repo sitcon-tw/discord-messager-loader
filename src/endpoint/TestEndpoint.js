@@ -152,3 +152,4 @@ global.testModel = () => {
     testModel.num = testModel.num * 2;
     modelEntitySource.refresh();
 }
+
