@@ -20,7 +20,11 @@ requireService.addComponent("EndpointService", endpointService);
 
 FOSLogger.info("Initializing other dependencies");
 
+let messageLoaderService = new MessageLoaderService();
+requireService.addComponent("MessageLoaderService", messageLoaderService);
+
 //Import Dependency Test
 import TestService from './service/TestService';
 import ModelService from './service/ModelService';
+import MessageLoaderService from './service/MessageLoaderService';
 let testService = new TestService();

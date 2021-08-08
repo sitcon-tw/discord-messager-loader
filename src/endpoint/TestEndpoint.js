@@ -153,3 +153,7 @@ global.testModel = () => {
     modelEntitySource.refresh();
 }
 
+global.testGetMessages = () => {
+    let messages = FOSRequire("MessageLoaderService").getMessage(4, 7);
+    console.log(messages);
+}

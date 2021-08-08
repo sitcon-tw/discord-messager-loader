@@ -8,4 +8,6 @@ import './endpoint/Endpoint'
 
 // Test
 import './model/TestModel'
+import './model/messageLoader/Person'
+import './model/messageLoader/Message'
 import './endpoint/TestEndpoint'
