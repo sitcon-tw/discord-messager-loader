@@ -11,7 +11,7 @@ class Message extends AbstractModel {
         /**@type {string} */
         this.personId = null;
         this.content = null;
-        this.hasDelay = null;
+        this.noDelay = null;
     }
 
     static getName() {

@@ -77,7 +77,7 @@ export default class extends AbstractService {
         let columnDefines = [];
         columnDefines.push(new ColumnDefine("人物ID", "personId"));
         columnDefines.push(new ColumnDefine("推送訊息", "content"));
-        columnDefines.push(new ColumnDefine("hasDelay", "hasDelay"));
+        columnDefines.push(new ColumnDefine("noDelay", "noDelay"));
     
         let sheetDefine = new SheetDefine("Message", 0, 0, 1, columnDefines);
         let sheet = spreadsheet.getSheetByName("推送訊息");
@@ -100,10 +100,10 @@ export default class extends AbstractService {
 
         messages.forEach((message) => {
             let webhookMessage = {};
-            if (message.hasDelay === "" || message.hasDelay === true) {
+            if (message.noDelay === "" || message.noDelay === false) {
                 webhookMessage.hasDelay = true
-            } else {
-                webhookMessage.hasDelay = message.hasDelay;
+            } else if(message.noDelay == true) {
+                webhookMessage.hasDelay = false;
             }
 
             let person = _.find(persons, { personId: message.personId });
