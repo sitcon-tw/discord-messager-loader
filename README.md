@@ -1,12 +1,16 @@
-# Accounting assistant
-A framework based on Google App Script (GAS) designed to increase the maintainability of GAS and provide highly abstract spreadsheet automation functions.
+
+setting: https://docs.google.com/spreadsheets/d/1PhN_QB1FZ_zimUuhB1VTPyyAzMS3gujxnJWq3FiYrag/
+data: https://docs.google.com/spreadsheets/d/1GbgKzxgrKD3y4g2GdOF2mbn8a8eh88FQrOvDqx7SJYc/
+exec gs: https://script.google.com/home/projects/1kteDxtNRjF212WSgl1APrRf-IDJmjYJVg4VMQbJ1ltfn3DdnGnk4P-xD
 
 ### Deploy the project
 ````
 npm run deploy
 ````
-### API
-#### Find Message by Number
+
+### Example input
+
+![image](https://user-images.githubusercontent.com/26710554/128627811-63a7c52a-5d88-41fc-a2e3-032ee36e5e0e.png)
 
 
 ### Credit
